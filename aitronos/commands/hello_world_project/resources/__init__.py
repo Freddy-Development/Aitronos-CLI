@@ -1,5 +1,5 @@
-from CurrentUser.current_user import CurrentUser
-from CurrentUser.helpers import User
+from .current_user import CurrentUser
+from .helpers import User
 
 __all__ = [
     "CurrentUser",

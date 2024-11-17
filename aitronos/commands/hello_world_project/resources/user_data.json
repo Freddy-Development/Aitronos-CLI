@@ -3,6 +3,7 @@
   "userName": "johndoe",
   "email": "johndoe@example.com",
   "uid": "12345",
+  "userToken": "asddas3e3443",
   "creationDate": "2023-10-01T12:34:56",
   "loginDevices": [
     {

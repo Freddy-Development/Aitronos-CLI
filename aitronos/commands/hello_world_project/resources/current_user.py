@@ -24,17 +24,16 @@ class CurrentUser:
 
     def _initialize(self):
         """
-        Loads user data from a predefined JSON file.
+        Loads user data from a JSON file.
         """
-        # Define the fixed path for the JSON file
-        json_path = Path("user_data.json")
+        # Resolve the JSON file path relative to this file's location
+        json_file = Path(__file__).parent / "user_data.json"
 
-        # Check if the file exists
-        if not json_path.exists():
-            raise FileNotFoundError(f"JSON file not found at path: {json_path}")
+        if not json_file.exists():
+            raise FileNotFoundError(f"JSON file not found at path: {json_file}")
 
         try:
-            with open(json_path, "r", encoding="utf-8") as file:
+            with open(json_file, "r", encoding="utf-8") as file:
                 data = json.load(file)
                 self._user_data = User.from_json(data)
         except json.JSONDecodeError as e:

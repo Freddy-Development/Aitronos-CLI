@@ -111,6 +111,7 @@ class User:
     user_name: str
     email: str
     uid: str
+    user_token: str
     creation_date: datetime
     login_devices: List[DeviceInformationObject]
     profile_image: ProfileImage
@@ -154,6 +155,7 @@ class User:
             user_name=data["userName"],
             email=data["email"],
             uid=data["uid"],
+            user_token=data["userToken"],
             creation_date=datetime.strptime(data["creationDate"], "%Y-%m-%dT%H:%M:%S"),
             login_devices=[
                 DeviceInformationObject(**transform_device_info(device))

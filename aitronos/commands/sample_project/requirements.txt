@@ -1,2 +1,0 @@
-FreddyApi~=1.1.12
-optional~=0.0.1
