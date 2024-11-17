@@ -1,7 +1,6 @@
+# cli.py
 import sys
 from aitronos.commands import streamline
-# Future imports for additional features:
-# from aitronos.commands import feature_x
 
 def main():
     if len(sys.argv) < 2:
@@ -19,3 +18,6 @@ def main():
         print(f"Unknown command: {command}")
         print("Available commands: streamLine")
         sys.exit(1)
+
+if __name__ == "__main__":
+    main()
