@@ -1,25 +1,22 @@
 {
-    "id": "uniqueProjectID",
+    "id": "com.exampleCompany.hello_world_project",
     "configuration": {
-        "executionDescription": "Initial setup and configuration for the project.",
+        "executionDescription": "Call this function when the user request the hello world example project to be called.",
         "parameters": [
             {
-                "id": "param1",
-                "name": "ExampleParameter",
+                "id": "extraContent",
+                "name": "extraContent",
                 "type": "string",
-                "description": "A sample parameter for demonstration purposes.",
-                "required": true
+                "description": "Any additional comment the user want you to add to the hello world project.",
+                "required": false
             }
         ],
-        "executionFilePath": "src/main/main_script.py",
-        "showRawResult": true,
-        "resultDescription": "Expected outcome of the initial setup."
+        "executionFilePath": "src/main/hello_world.py",
+        "showRawResult": false,
+        "resultDescription": "Summarize the result"
     },
     "userAccess": [
-        "admin",
-        "developer"
     ],
     "accessLevel": [
-        1
     ]
 }

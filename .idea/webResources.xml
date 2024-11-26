@@ -6,6 +6,7 @@
         <entryData>
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/aitronos/commands/hello_world_project/resources" />
+            <path value="file://$PROJECT_DIR$/aitronos/commands/hello_world_project/execution_log" />
           </resourceRoots>
         </entryData>
       </entry>

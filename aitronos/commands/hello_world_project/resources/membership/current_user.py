@@ -60,10 +60,10 @@ class CurrentUser:
 
 
 # Example Usage
-if __name__ == "__main__":
-    try:
-        current_user = CurrentUser()  # Automatically loads user_data.json
-        user_data = current_user.user  # Access the User instance
-        print(user_data)
-    except Exception as e:
-        print(f"An error occurred: {e}")
+# if __name__ == "__main__":
+#     try:
+#         current_user = CurrentUser()  # Automatically loads user_data.json
+#         user_data = current_user.user  # Access the User instance
+#         print(user_data)
+#     except Exception as e:
+#         print(f"An error occurred: {e}")
