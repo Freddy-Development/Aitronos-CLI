@@ -27,9 +27,10 @@ class Logger:
 
     def __init__(self):
         """
-        Initializes the Logger. Ensures the log file exists.
+        Initializes the Logger. Ensures the log file exists and sets default remaining time.
         """
         self._initialize_log_file()
+        self.remaining_time = None  # Default to None unless explicitly set.
 
     def _initialize_log_file(self):
         """
@@ -81,15 +82,22 @@ class Logger:
 
         return summary
 
+    def set_remaining_time(self, minutes: Optional[int]):
+        """
+        Sets or updates the estimated remaining time for the current task.
+
+        :param minutes: Remaining time in minutes (optional).
+        """
+        self.remaining_time = minutes
+
     def _estimate_time_remaining(self) -> str:
         """
-        Placeholder for estimating the remaining time for execution.
-        Returns a string indicating the estimated time left.
+        Estimates the remaining time for execution.
+        If user-provided time is available, uses that. Otherwise, returns a default estimate.
         """
-        # Example logic: Placeholder for real estimation.
-        # This could be tied to the number of steps in a workflow.
-        estimated_time_minutes = 5  # Placeholder value
-        return f"~{estimated_time_minutes} minutes remaining"
+        if self.remaining_time is not None:
+            return f"~{self.remaining_time} minutes remaining"
+        return "Time remaining: unknown"
 
     def display_insights(self):
         """
@@ -157,15 +165,18 @@ class Logger:
 
 
 # Example Usage
-if __name__ == "__main__":
-    logger = Logger()
-    logger.info("Automation execution started", component="MainExecutor")
-
-    try:
-        # Simulate an error
-        1 / 0
-    except Exception as e:
-        logger.error("Failed to execute division operation", component="MathModule", exc=e)
-
-    logger.warning("Potential configuration issue detected", component="ConfigValidator")
-    logger.debug("Debugging execution details", component="MainExecutor")
+# if __name__ == "__main__":
+#     logger = Logger()
+#     logger.info("Automation execution started", component="MainExecutor")
+#
+#     # Set remaining time
+#     logger.set_remaining_time(10)  # User sets remaining time as 10 minutes.
+#
+#     try:
+#         # Simulate an error
+#         1 / 0
+#     except Exception as e:
+#         logger.error("Failed to execute division operation", component="MathModule", exc=e)
+#
+#     logger.warning("Potential configuration issue detected", component="ConfigValidator")
+#     logger.debug("Debugging execution details", component="MainExecutor")

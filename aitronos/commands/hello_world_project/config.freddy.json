@@ -18,5 +18,7 @@
     "userAccess": [
     ],
     "accessLevel": [
-    ]
+    ],
+    "fillOrgData": false,
+    "fillUserData": true
 }

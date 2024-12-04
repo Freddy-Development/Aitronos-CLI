@@ -1,0 +1,12 @@
+{
+  "id": "1231233",
+    "name": "Example Company",
+    "logo": "https://example.com/logo.jpg",
+    "adress": {
+      "street": "123 Main St",
+      "postCode": "12345",
+      "city": "New York",
+      "country": "USA",
+      "phoneNumber": "123-456-7890"
+    },
+}
