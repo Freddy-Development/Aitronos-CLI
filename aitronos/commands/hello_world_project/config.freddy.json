@@ -1,24 +1,50 @@
-{
-    "id": "com.exampleCompany.hello_world_project",
-    "configuration": {
-        "executionDescription": "Call this function when the user request the hello world example project to be called.",
-        "parameters": [
-            {
-                "id": "extraContent",
-                "name": "extraContent",
-                "type": "string",
-                "description": "Any additional comment the user want you to add to the hello world project.",
-                "required": false
-            }
+[
+    {
+        "id": "com.exampleCompany.hello_world_project",
+        "configuration": {
+            "executionDescription": "Call this function when the user request the hello world example project to be called.",
+            "parameters": [
+                {
+                    "id": "extraContent",
+                    "name": "extraContent",
+                    "type": "string",
+                    "description": "Any additional comment the user want you to add to the hello world project.",
+                    "required": false
+                }
+            ],
+            "executionFilePath": "src/main/hello_world.py",
+            "showRawResult": false,
+            "resultDescription": "Summarize the result"
+        },
+        "userAccess": [
         ],
-        "executionFilePath": "src/main/hello_world.py",
-        "showRawResult": false,
-        "resultDescription": "Summarize the result"
+        "accessLevel": [
+        ],
+        "fillOrgData": false,
+        "fillUserData": true
     },
-    "userAccess": [
-    ],
-    "accessLevel": [
-    ],
-    "fillOrgData": false,
-    "fillUserData": true
-}
+    {
+        "id": "com.exampleCompany.hello_world_project",
+        "configuration": {
+            "executionDescription": "Call this function when the user request the hello world example project to be called.",
+            "parameters": [
+                {
+                    "id": "extraContent",
+                    "name": "extraContent",
+                    "type": "string",
+                    "description": "Any additional comment the user want you to add to the hello world project.",
+                    "required": false
+                }
+            ],
+            "executionFilePath": "src/main/hello_world.py",
+            "showRawResult": false,
+            "resultDescription": "Summarize the result"
+        },
+        "userAccess": [
+        ],
+        "accessLevel": [
+        ],
+        "fillOrgData": false,
+        "fillUserData": true
+    }
+]
