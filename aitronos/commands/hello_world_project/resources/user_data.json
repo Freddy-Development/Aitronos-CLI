@@ -3,7 +3,7 @@
   "userName": "johndoe",
   "email": "johndoe@example.com",
   "uid": "12345",
-  "userToken": "asddas3e3443",
+  "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI0OSIsIklzQWRtaW4iOiJUcnVlIiwibmJmIjoxNzMxOTU0ODE5LCJleHAiOjE3MzQ1NDY4MTksImlhdCI6MTczMTk1NDgxOX0.AWwJspuNKL5uDWFodhrtOR86W6WPloRgGCFaeV5-P4g",
   "creationDate": "2023-10-01T12:34:56",
   "loginDevices": [
     {
