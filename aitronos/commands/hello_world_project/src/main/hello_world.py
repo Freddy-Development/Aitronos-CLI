@@ -1,5 +1,9 @@
-from resources import CurrentUser
 import Aitronos
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+from resources import CurrentUser
 
 
 def main():
